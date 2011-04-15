@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunch Punch</title>
+    <!-- Load up a Google font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <!-- Inline CSS, b/c we have only one page -->
+    <style type="text/css">
+      #init h1, #init h2 { margin:0.2em; }
+      #init h1 { font-size:3em; font-family:"Arial Black", sans-serif; }
+      #init h2 { font-size:1.5em; font-family:Verdana, sans-serif; font-style:italic; }
+      #init h3 { font-size:3em; margin-bottom:0; font-family:Tangerine, serif; font-weight:normal; }
+      #init input { font-size:2em; text-align:center; font-weight:bold; }
+      #init a { display:block; margin:1em; }
+      #init { margin:0 auto; margin-top:5%; text-align:center; }
+      #wrapper { outline:5px gray solid;padding:2em;padding-bottom:2em;display:inline-block; background-color:white; }
+
+      #help-cont { margin:0 auto; text-align:center; width:40em; display:none;}
+      #help { text-align:left; background-color:white;outline:8px black solid;}
+
+      #cont { display:none; }
+    </style>
+
+    <!-- load up 3rd party libs -->
+    <script type="text/javascript" src="jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="gee.js"></script>
+    <script type="text/javascript" src="hunch-api.js"></script>
+
+    <!-- our js code -->
+    <script type="text/javascript" src="game-engine.js"></script>
+    <script type="text/javascript" src="hunch-fetch.js"></script>
+  </head>
+
+
+  <body>
+    <!-- Initial interface -->
+    <div id="init">
+      <div id="wrapper">
+      <h1>Hunch Punch</h1>
+      <h2>Everything you love...</h2>
+      <h2>... is trying to kill you</h2>
+      <h3>Enter Thine Twitter Username</h3>
+      <form id="init-sub">
+	<input type="text" size="20" id="init-input" /><br/>
+	<input type="submit" value="!!SHOOT 'EM UP BRO!!" />
+      </form>
+
+      <a href="#" id="call-help">Need help?</a>
+      <a href="hunchpunch.zip">Want some source?</a>
+      </div>
+    </div>
+    
+    <!-- help section -->
+    <div id="help-cont">
+      <div id="help">
+      <h1>Help</h1>
+      <p>To play, use the arrow keys to move around: left and right to rotate, and up and down to accelerate/deccelerate. Use the spacebar to fire, and press the r key at the appropriate times to spawn again.</p>
+      <p>NOTE: when you hit r to respawn, you will pop back into normal space immediately: if there's an asteroid in the middle of the screen, then tough luck, you've just died again. Sucker.</p>
+      <p>Points works as follows:</p>
+      <ul>
+	<li>Moving around costs a flat rate of points</li>
+	<li>Shooting costs points</li>
+	<li>Shooting an asteroid pays out points</li>
+	<li>Merely living pays out points: the longer you stay alive, the more it pays out</li>
+      </ul>
+      <p>This was set up to discourage spin-n-spray, and to encourage more thoughtful precision asteroid harvesting. No, we do not have a leaderboard: if people complain, then maybe one of us will take time to make one. Maybe.</p>
+      </div>
+    </div>
+
+    <!-- For the actual game content -->
+    <div id="cont">
+    </div>
+  </body>
+</html>

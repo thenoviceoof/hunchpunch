@@ -1,0 +1,38 @@
+################################################################################
+# Hunch Punch
+# Everything you love... is trying to kill you!
+################################################################################
+# Basically, it's an all javascript game that leverages the Hunch API
+################################################################################
+
+We coded this up for the HackNY hackathon (Spring 2011), a fun little thing that uses Canvas and Hunch.
+
+CONTRIB
+--------------------------------------------------------------------------------
+Mark Liu - Game Mechanic
+    https://github.com/markisus
+Grant Kot - Canvas Ninja
+    http://grantkot.com/
+Nathan Hwang - Code Monkey
+    http://thenoviceoof.com/
+Willie Neiswanger - The Namer
+
+ACKNOWLEDGEMENTS
+--------------------------------------------------------------------------------
+The folks at HackNY for putting on an awesome hackathon
+    https://github.com/hackny/spring2011_hackathon/wiki
+George Michael Brower for making Gee, the canvas lib
+    https://github.com/georgealways/gee
+The folks at Hunch for making their API
+    http://hunch.com/developers/v1/
+Jquery folks for making their awesome JS lib
+    http://jquery.com/
+Tony L for jquery .center()
+    http://stackoverflow.com/users/21905/tony-l
+
+LICENSE
+--------------------------------------------------------------------------------
+
+Do whatever you want with this code, it's not like we're going to keep working on this particular code base. 
+
+The gee, jquery, and hunch-api examples belong to their respective owners.
